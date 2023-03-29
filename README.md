@@ -5,7 +5,7 @@ Submitted by: **Chelsea Heredia**
 This web app: **This extensive list of recipes is perfect for those looking to try new, healthy, and quick meals Current recipes include a variety of pasta dishes 
 to be prepared all under an hour! Stay tuned for next week to see more options!**
 
-Time spent: **15** hours spent in total
+Time spent: **21** hours spent in total
 
 ## Required Features
 
@@ -17,13 +17,13 @@ The following **required** functionality is completed:
   - [X] *Shortest cooking time*
   - [X] *Total number of recipes returned*
   - [X] *Mean (average) health score*
-- [ ] **A search bar allows the user to search for an item in the fetched data**
-- [ ] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [X] **A search bar allows the user to search for an item in the fetched data**
+- [X] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
 
 The following **optional** features are implemented:
 
 - [ ] Multiple filters can be applied simultaneously
-- [ ] Filters use different input types such as a text input, a selection, or a slider
+- [X] Filters use different input types such as a text input, a selection, or a slider
 - [ ] The user can enter specific bounds for filter values
 
 The following **additional** features are implemented:
@@ -33,8 +33,11 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
+Original submission (Fetched data & summary cards):
 <img src='http://i.imgur.com/Sj7ZTEGh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+Final submission (All required features + button input)
+<img src='https://imgur.com/EeI91ld.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif, GIPHY
@@ -49,6 +52,8 @@ Describe any challenges encountered while building the app.
 I have not been able to successfully implement search functionality and another filter at this time. I also ran out renders (free queries enabled by the Spoonacular API)
 for 2 accounts today. Stay tuned for Wednesday night when I complete the rest of the functionality for this app. (AS OF MONDAY 3/27/2023 9:26PM PT)
 
+AS OF WEDNESDAY 3/29/2023 4:26PM
+All required functionality is complete! I used search bars for filtering the fetched data by name and servings. Servings can also be filtered by button to diversify the input data type.
 
 
 ## License
