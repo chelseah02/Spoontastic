@@ -47,8 +47,14 @@
 }
 .sum-stats {
   display: flex;
+
 }
 
 .read-the-docs {
   color: #888;
+}
+
+.btn-filter {
+  display: inline-block;
+  background-color: tan !important;
 }

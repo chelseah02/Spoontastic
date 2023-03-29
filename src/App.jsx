@@ -17,7 +17,7 @@ function App() {
 
   })
   const [list, setList] = useState([]);
-  console.log("List before rendering");
+  //const [filteredList, setFilteredList] = useState([]);
   console.log(list);
   useEffect(() => {
     const fetchAllRecipeData = async () => {
@@ -36,14 +36,13 @@ function App() {
       }
       else {
         setList(json['results']);
-        console.log("List")
-        console.log(list); // returns error, cannot set json data to list
       }
     };
     fetchAllRecipeData().catch(console.error);
   }, []);
-
+  console.log("Regular list");
   console.log(list);
+
   // Initializing values for cards
 
   const HealthCard = (props) => {
@@ -80,52 +79,103 @@ function App() {
   const RecipeCountCard = () => {
     return(
       <div className="card">
-          <h2>Total Recipes Displayed</h2>
+          <h2>Total Recipes Originally Displayed</h2>
           {list.length ? <h2>{list.length}</h2>: <h2>0</h2>}
       </div>
   )
   }
 
-  const ShortestTimeCard = () => {
-    const [shortestTime, setShortestTime] = useState(0);
-    const handleCook = () => {
+  const MaxServingsCard = () => {
+    const [mostServings, setMostServings] = useState(0);
+    const handleServings = () => {
       console.log("handle cook!");
       if (list.length) {
         console.log("list length inside cook!");
         console.log(list.length);
         console.log(list[0].readyInMinutes);
-        let minTime = 100000000;
-        let currentTime = 0;
+        let maxServings = -100000000;
+        let currentServings = 0;
         for (let i = 0; i < list.length; i++) {
-          currentTime = list[i].readyInMinutes;
-          if (currentTime < minTime) {
-            minTime = currentTime;
+          currentServings = list[i].servings;
+          if (currentServings > maxServings) {
+            maxServings = currentServings;
           }
         }
-        console.log("shortest time");
-        console.log(minTime);
-        if (minTime != shortestTime) {
-          console.log("Not equal to shortestTime!");
-          setShortestTime(minTime);
+        console.log("max servings");
+        console.log(maxServings);
+        if (maxServings != mostServings) {
+          console.log("Not equal to mostServings!");
+          setMostServings(maxServings);
         }
       } }
     return (
-      <div className="card" onClick={handleCook}>
-        <h2>Shortest Time to Make Recipe</h2>
-        {shortestTime ? <h2> {shortestTime + " minutes"} </h2> : <h2> {"Click to see!"} </h2>}
+      <div className="card" onClick={handleServings}>
+        <h2>Original Maximum Servings for a Recipe</h2>
+        {mostServings ? <h2> {mostServings + " servings"} </h2> : <h2> {"Click to see!"} </h2>}
       </div>
     )
   }
+
+  const [searchInput, setSearchInput] = useState("");
+  const [servingsRequest, setServingsRequest] = useState("");
+
+  const handleSearchInput = searchValue => {
+      // check search to filter based on user's inputs
+      setSearchInput(searchValue);
+  };
+  const handleServingsInput = input => {
+    setServingsRequest(input);
+  };
+
+
+  const [fourServings, setFourServings] = useState(false);
+  const [fiveServings, setFiveServings] = useState(false);
+  const [elevenServings, setElevenServings] = useState(false);
+  const [twentyServings, setTwentyServings] = useState(false);
+  const handleFourServings = () => {
+    setFourServings(!fourServings);
+    /*setFilteredList(
+      Object.keys(filteredList).filter((item) => 
+        Object.values(filteredList[item].servings) <= (4))
+    )*/
+  };
+  const handleFiveServings = () => {
+    setFiveServings(!fiveServings);
+  };
+  const handleElevenServings = () => {
+    setElevenServings(!elevenServings);
+  };
+  const handleTwentyServings = () => {
+    setTwentyServings(!twentyServings);
+  };
 
   return (
     <div className="App">
       <div className='header'>
         <h1>Spoontastic!</h1>
       </div>
+      <h4> Enter recipe name: </h4>
+      <input
+        type="text"
+        placeholder='Search...'
+        onChange={(inputString) => handleSearchInput(inputString.target.value)}
+      />
+      <h4> Enter number of servings: </h4>
+      <input
+        type="text"
+        placeholder='Search...'
+        onChange={(servingsInput) => handleServingsInput(servingsInput.target.value)}
+      />
+      <div>
+        <button className='btn-filter' onClick={handleFourServings}>4 and under</button>
+        <button className='btn-filter' onClick={handleFiveServings}> Between 5 and 10</button>
+        <button className='btn-filter' onClick={handleElevenServings}>Between 11 and 20</button>
+        <button className='btn-filter' onClick={handleTwentyServings}> Over 20</button>
+      </div>
       <div className="sum-stats">
-        <HealthCard title="Average Health Score"></HealthCard>
+        <HealthCard title="Original Average Health Score"></HealthCard>
         <RecipeCountCard></RecipeCountCard>
-        <ShortestTimeCard></ShortestTimeCard>
+        <MaxServingsCard></MaxServingsCard>
       </div>
       <div className="recipe_list">
         <h3>Recipes</h3>
@@ -139,14 +189,50 @@ function App() {
             </tr>
           </thead>
           <tbody>
-            {list.length && Object.entries(list).map(([recipe]) =>
-            <tr key={list[recipe].id}>
-              <td>{list[recipe].title}</td>
-              <td>{list[recipe].readyInMinutes + " minutes"}</td>
-              <td>{list[recipe].servings}</td>
-              <td>{list[recipe].healthScore}</td>
-            </tr>
-            )}
+            {
+              (searchInput.length > 0)
+                ? ( 
+                    Object.keys(list).filter((item) => 
+                      Object.values(list[item].title)
+                          .join("")
+                          .toLowerCase()
+                          .includes(searchInput.toLowerCase())
+                    ).map((recipe) =>
+                      <tr key={list[recipe].id}>
+                        <td>{list[recipe].title}</td>
+                        <td>{list[recipe].readyInMinutes + " minutes"}</td>
+                        <td>{list[recipe].servings}</td>
+                        <td>{list[recipe].healthScore}</td>
+                      </tr>
+                    ) 
+                  )
+                : 
+                    ((servingsRequest.length > 0)
+                ? ( 
+                    Object.keys(list).filter((item) => 
+                      (list[item].servings)
+                          .toString()
+                          .includes(servingsRequest)
+                    ).map((recipe) =>
+                      <tr key={list[recipe].id}>
+                        <td>{list[recipe].title}</td>
+                        <td>{list[recipe].readyInMinutes + " minutes"}</td>
+                        <td>{list[recipe].servings}</td>
+                        <td>{list[recipe].healthScore}</td>
+                      </tr>
+                    ) 
+                  )
+                : 
+                      list.length && Object.entries(list).map(([recipe]) =>
+                        <tr key={list[recipe].id}>
+                          <td>{list[recipe].title}</td>
+                          <td>{list[recipe].readyInMinutes + " minutes"}</td>
+                          <td>{list[recipe].servings}</td>
+                          <td>{list[recipe].healthScore}</td>
+                        </tr>
+                        ))
+
+            }
           </tbody>
         </table>
       </div>

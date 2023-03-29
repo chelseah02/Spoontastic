@@ -22,5 +22,5 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
 VITE_APP_ACCESS_KEY = "dd23971c32e74e639b32001484e0ed92"
+VITE_APP_ACCESS_KEY = "7ed3e5b46aa04b2796715359f5b8c170"
