@@ -33,10 +33,6 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-Original submission (Fetched data & summary cards):
-<img src='http://i.imgur.com/Sj7ZTEGh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-Final submission (All required features + button input)
 <img src='https://i.imgur.com/EeI91ld.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
