@@ -37,7 +37,7 @@ Original submission (Fetched data & summary cards):
 <img src='http://i.imgur.com/Sj7ZTEGh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 Final submission (All required features + button input)
-<img src='https://imgur.com/EeI91ld.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/EeI91ld.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif, GIPHY
