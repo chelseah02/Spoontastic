@@ -33,7 +33,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-<img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMGZkZDJmNzZjN2VkMGE1YzViZGMyYjM0ODc2OWVhYmZjNThmMTFkZiZjdD1n/cmZs3QvXAClhyANdTo/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/avbQjjYh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ScreenToGif, GIPHY
@@ -50,7 +50,7 @@ for 2 accounts today. Stay tuned for Wednesday night when I complete the rest of
 
 AS OF WEDNESDAY 3/29/2023 4:26PM
 All required functionality is complete! I used search bars for filtering the fetched data by name and servings. Servings can also be filtered by button to diversify the input data type.
-The GIF is appearing slightly blurry on this README.md (using GIPHY), so I submitted another link that clearly shows the implemented user stories in the submission form.
+
 
 ## License
 
