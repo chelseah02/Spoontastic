@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import List from './components/List'
+import {Link} from "react-router-dom";
 const ACCESS_KEY = import.meta.env.VITE_APP_ACCESS_KEY;
 
 function App() {
@@ -178,10 +179,10 @@ function App() {
         <MaxServingsCard></MaxServingsCard>
       </div>
       <div className="recipe_list">
-        <h3>Recipes</h3>
-        <table>
+        <h3 style={{color: "maroon", backgroundColor: "beige"}}>Recipes</h3>
+        <table className='table-style'>
           <thead>
-            <tr>
+            <tr className='table-style'>
               <th> Recipe Name </th>
               <th> Time Until Ready</th>
               <th> Servings</th>
@@ -197,9 +198,12 @@ function App() {
                           .join("")
                           .toLowerCase()
                           .includes(searchInput.toLowerCase())
-                    ).map((recipe) =>
-                      <tr key={list[recipe].id}>
-                        <td>{list[recipe].title}</td>
+                    ).map((recipe) =>            
+                      <tr className='table-style' key={list[recipe].id}>
+                        <td><Link
+                        style={{color: "maroon"}}
+                        to={`/RecipeDetails/${list[recipe].id}`}
+                        key={list[recipe].id} >{list[recipe].title} </Link></td>
                         <td>{list[recipe].readyInMinutes + " minutes"}</td>
                         <td>{list[recipe].servings}</td>
                         <td>{list[recipe].healthScore}</td>
@@ -215,7 +219,10 @@ function App() {
                           .includes(servingsRequest)
                     ).map((recipe) =>
                       <tr key={list[recipe].id}>
-                        <td>{list[recipe].title}</td>
+                        <td><Link
+                        style={{color: "maroon"}}
+                        to={`/RecipeDetails/${list[recipe].id}`}
+                        key={list[recipe].id} >{list[recipe].title}</Link></td>
                         <td>{list[recipe].readyInMinutes + " minutes"}</td>
                         <td>{list[recipe].servings}</td>
                         <td>{list[recipe].healthScore}</td>
@@ -225,11 +232,15 @@ function App() {
                 : 
                       list.length && Object.entries(list).map(([recipe]) =>
                         <tr key={list[recipe].id}>
-                          <td>{list[recipe].title}</td>
+                          <td><Link
+                        style={{color: "maroon"}}
+                        to={`/RecipeDetails/${list[recipe].id}`}
+                        key={list[recipe].id} >{list[recipe].title} </Link></td>
                           <td>{list[recipe].readyInMinutes + " minutes"}</td>
                           <td>{list[recipe].servings}</td>
                           <td>{list[recipe].healthScore}</td>
                         </tr>
+
                         ))
 
             }

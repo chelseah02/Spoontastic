@@ -58,3 +58,27 @@
   display: inline-block;
   background-color: tan !important;
 }
+
+.table-style {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  background-color: tan !important;
+  color: rgb(126, 33, 33);
+}
+tr:hover {
+  background-color: blanchedalmond;
+}
+
+nav {
+  position: fixed; 
+  top: 0; 
+  right: 0; 
+}
+
+.home-link 
+{
+  border:1px dotted white;
+  background:rgb(121, 81, 30);
+  width:75px;
+  height: 40px;
+}
