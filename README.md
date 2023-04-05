@@ -27,8 +27,10 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
-<img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2JiZTU5M2FhZDRmOGIyYWNkNzc1YTA5ZTNmOGQwZTdlNTg0YmI5MCZjdD1n/mBHeIoLBwGkQJrqSml/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+User Story 1: Chart Demo
+<img src='http://i.imgur.com/t3nnh5Kh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+User Story 2: Unique Link for each item
+User Story 3: Details page for clicking each recipe
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
@@ -79,51 +81,3 @@ The following **required** functionality is completed:
   - [X] *Mean (average) health score*
 - [X] **A search bar allows the user to search for an item in the fetched data**
 - [X] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
-
-The following **optional** features are implemented:
-
-- [ ] Multiple filters can be applied simultaneously
-- [X] Filters use different input types such as a text input, a selection, or a slider
-- [ ] The user can enter specific bounds for filter values
-
-The following **additional** features are implemented:
-
-* [ ] List anything else that you added to improve the site's functionality!
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ScreenToGif, GIPHY
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
-
-## Notes
-
-Describe any challenges encountered while building the app.
-I have not been able to successfully implement search functionality and another filter at this time. I also ran out renders (free queries enabled by the Spoonacular API)
-for 2 accounts today. Stay tuned for Wednesday night when I complete the rest of the functionality for this app. (AS OF MONDAY 3/27/2023 9:26PM PT)
-
-AS OF WEDNESDAY 3/29/2023 4:26PM
-All required functionality is complete! I used search bars for filtering the fetched data by name and servings. Servings can also be filtered by button to diversify the input data type.
-
-
-## License
-
-    Copyright [yyyy] [name of copyright owner]
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
