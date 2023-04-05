@@ -28,7 +28,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 User Story 1: Chart Demo
-<img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTM3M2JhMWVlNTllNDVjNjY1NjY0MTZlNjQyN2IxNWIwOTYyOGQ1NCZjdD1n/i2s6NnOj98o4uhHQdt/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTFhYjIyMDQ3MjRiMTJhZGIyZjk5NjZlNDVmNmQ2MzZjNTVhZWMyMyZjdD1n/U6Rugq4HnF3Rm4H7pv/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 User Story 2: Details page for clicking each recipe
 <img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWIwMzJlMzFiMDMzNjZlMjkyMGI4YmI3NTI4YTRmNzg0NDY5MTYwYSZjdD1n/nMeqK2FCkhG4H0oXQf/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
