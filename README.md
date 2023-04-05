@@ -4,7 +4,7 @@ Submitted by: **Chelsea Heredia**
 
 This web app: **This app allows users to search through a variety of pasta recipes! For more information on a particular recipe, click on its title and proceed to its Detail page!**
 
-Time spent: **15** hours spent in total
+Time spent: **17** hours spent in total
 
 ## Required Features
 
@@ -28,13 +28,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 User Story 1: Chart Demo
-<img src='http://i.imgur.com/t3nnh5Kh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTM3M2JhMWVlNTllNDVjNjY1NjY0MTZlNjQyN2IxNWIwOTYyOGQ1NCZjdD1n/i2s6NnOj98o4uhHQdt/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 User Story 2: Details page for clicking each recipe
-<img src='http://i.imgur.com/oX2SW5eh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWIwMzJlMzFiMDMzNjZlMjkyMGI4YmI3NTI4YTRmNzg0NDY5MTYwYSZjdD1n/nMeqK2FCkhG4H0oXQf/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 User Story 3: Unique Link for each item
-<img src='https://i.imgur.com/fupaxjZ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDViMTFkNWNmNTQ5NTIxZGYyYjc1NzY3NzFlOGM5MTRlNjJmZGQzMiZjdD1n/rLFjILEueGpjgq2uRY/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
@@ -47,6 +47,9 @@ GIF created with ...
 
 Describe any challenges encountered while building the app.
 I think I have successfully completed routing of the pages, so clicking on a recipe leads to its unique page. However, the representation of the details data is still presenting challenges to me as well as the generation of a graphic as of Monday 4/3/2023 9:45pm PT.
+
+AS OF WEDNESDAY 4/5/2022 11:20 AM PDT
+All required features are sucessfully complete!
 
 ## License
 
