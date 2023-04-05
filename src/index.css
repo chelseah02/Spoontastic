@@ -70,3 +70,16 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.details-intro {
+  color: maroon;
+  background-color: tan;
+
+}
+.details-table {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.chart {
+  background-color: tan !important;
+}

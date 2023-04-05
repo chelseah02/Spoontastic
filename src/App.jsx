@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import List from './components/List'
 import {Link} from "react-router-dom";
+import RecipeChart from './components/RecipeChart';
 const ACCESS_KEY = import.meta.env.VITE_APP_ACCESS_KEY;
 
 function App() {
@@ -247,6 +248,7 @@ function App() {
           </tbody>
         </table>
       </div>
+      <RecipeChart />
     </div>
   )
 }
