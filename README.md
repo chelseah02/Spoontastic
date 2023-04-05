@@ -4,7 +4,7 @@ Submitted by: **Chelsea Heredia**
 
 This web app: **This app allows users to search through a variety of pasta recipes! For more information on a particular recipe, click on its title and proceed to its Detail page!**
 
-Time spent: **10** hours spent in total
+Time spent: **15** hours spent in total
 
 ## Required Features
 
@@ -29,8 +29,12 @@ The following **additional** features are implemented:
 Here's a walkthrough of implemented user stories:
 User Story 1: Chart Demo
 <img src='http://i.imgur.com/t3nnh5Kh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-User Story 2: Unique Link for each item
-User Story 3: Details page for clicking each recipe
+
+User Story 2: Details page for clicking each recipe
+<img src='http://i.imgur.com/oX2SW5eh.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+User Story 3: Unique Link for each item
+<img src='https://i.imgur.com/fupaxjZ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...  
